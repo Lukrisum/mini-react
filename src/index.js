@@ -1,5 +1,5 @@
 // import React from "react";
-import MyReact from "./my-react";
+import MyReact from "./mini-react";
 // import  ReactDOM  from "react-dom";
 
 const element = MyReact.createElement(
@@ -9,7 +9,13 @@ const element = MyReact.createElement(
     id:'sky'
   },
   'world',
-  MyReact.createElement('a',{href:"https://www.bilibili.com/video/BV1aW411Q7x1?p=8"},'nmsl')
+  MyReact.createElement(
+    'a',
+    {href:"https://www.bilibili.com/video/BV1aW411Q7x1?p=8"},
+    'nmsl',
+    MyReact.createElement('a',{href:"https://www.baidu.com"},
+    'nmsl')
+  )
 )
 
 console.log(element)

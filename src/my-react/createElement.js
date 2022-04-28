@@ -1,4 +1,10 @@
-//格式化
+/**
+ * 
+ * @param {} type 
+ * @param {*} props 
+ * @param  {...any} children 
+ * @returns 
+ */
 const createElement = (type, props, ...children) => {
 
   return {
@@ -6,7 +12,7 @@ const createElement = (type, props, ...children) => {
     props: {
       ...props,
       children: children?.map(child =>
-        typeof child == "object"
+        typeof child === "object"
           ? child
           : createTextElement(child)
       )
