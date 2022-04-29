@@ -1,10 +1,3 @@
-/**
- * 
- * @param {} type 
- * @param {*} props 
- * @param  {...any} children 
- * @returns 
- */
 const createElement = (type, props, ...children) => {
 
   return {
